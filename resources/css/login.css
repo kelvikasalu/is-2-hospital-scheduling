@@ -1,0 +1,125 @@
+/* Basic reset for consistent appearance across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Labels */
+x-input-label {
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Input Fields */
+x-text-input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+x-text-input:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.2);
+}
+
+/* Error Messages */
+x-input-error {
+    color: #e3342f;
+    font-size: 0.85rem;
+}
+
+/* Remember Me Section */
+label[for="remember_me"] {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+input#remember_me {
+    accent-color: #6366f1;
+    margin-right: 0.5rem;
+}
+
+/* Forgot Password Link */
+a.underline {
+    font-size: 0.85rem;
+    color: #6366f1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a.underline:hover {
+    color: #4f46e5;
+}
+
+/* Submit Button */
+x-primary-button {
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+x-primary-button:hover {
+    background-color: #4f46e5;
+}
+
+x-primary-button:active {
+    background-color: #3b3cf0;
+}
+
+/* Additional Styles */
+form .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+form .block {
+    display: block;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 480px) {
+    form {
+        padding: 1.5rem;
+    }
+    
+    x-primary-button {
+        width: 100%;
+    }
+}
